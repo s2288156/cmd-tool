@@ -8,4 +8,4 @@
  */
 
 rootProject.name = "cmd-tool"
-
+include("excel")

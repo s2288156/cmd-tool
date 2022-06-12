@@ -6,16 +6,18 @@
  */
 plugins {
     idea
-    java
 }
 
-group = "org.cmd"
-version = "0.0.1"
+allprojects {
+    group = "org.cmd"
+    version = "0.0.1"
 
-repositories {
-    maven {
-        setUrl("https://maven.aliyun.com/repository/public/")
+    apply(plugin = "idea")
+
+    repositories {
+        maven {
+            setUrl("https://maven.aliyun.com/repository/public/")
+        }
+        mavenCentral()
     }
-    mavenCentral()
 }
-

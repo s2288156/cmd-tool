@@ -1,4 +1,4 @@
-package org.cmd.excel;
+package org.cmd;
 
 /**
  * @author Wu.Chunyang
