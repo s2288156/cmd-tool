@@ -32,7 +32,7 @@ public class StDataListener implements ReadListener<ReadSt> {
     @Override
     public void doAfterAllAnalysed(AnalysisContext context) {
         log.info("All data analysed!");
-        String writeFileName = "C:" + SEPARATOR + "Users" + SEPARATOR + "chunyang.wu" + SEPARATOR + "my.xlsx";
+        String writeFileName = System.getProperty("user.home") + SEPARATOR + "my.xlsx";
         List<ReadSt> allData = StStorage.queryAll();
         int tupleSize = allData.size() / 3;
         for (int i = 0; i < tupleSize; i++) {

@@ -18,6 +18,7 @@ public class LocalDemo {
     public static void main(String[] args) {
         String userhome = System.getProperty("user.home");
         String readFileName = userhome + SEPARATOR + "st.xlsx";
+        log.warn("{}", readFileName);
         EasyExcel.read(readFileName, ReadSt.class, new StDataListener()).sheet().doRead();
     }
 }
