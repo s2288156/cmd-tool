@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 /**
  * @author Wu.Chunyang
  */
-public class ExcelMain {
+public class ExcelCmdMain {
     public static void main(String[] args) {
         Options options = new Options();
         options.addOption("t", false, "show data time!");
