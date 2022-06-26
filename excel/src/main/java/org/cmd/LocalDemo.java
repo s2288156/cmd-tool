@@ -2,7 +2,7 @@ package org.cmd;
 
 import com.alibaba.excel.EasyExcel;
 import lombok.extern.slf4j.Slf4j;
-import org.cmd.listener.StDataListener;
+import org.cmd.listener.ReadAndWriteExecuteListener;
 import org.cmd.model.ReadSt;
 
 import java.io.File;
@@ -19,6 +19,6 @@ public class LocalDemo {
         String userhome = System.getProperty("user.home");
         String readFileName = userhome + SEPARATOR + "st.xlsx";
         log.warn("{}", readFileName);
-        EasyExcel.read(readFileName, ReadSt.class, new StDataListener()).sheet().doRead();
+        EasyExcel.read(readFileName, ReadSt.class, new ReadAndWriteExecuteListener()).sheet().doRead();
     }
 }
