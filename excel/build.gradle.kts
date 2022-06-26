@@ -24,7 +24,7 @@ dependencies {
 }
 
 application {
-    mainClass.set("org.cmd.ExcelMain")
+    mainClass.set("org.cmd.ExcelCmdMain")
 }
 
 tasks.getByName<Test>("test") {
